@@ -72,6 +72,7 @@ class RoomDetailVC: UIViewController , UITableViewDataSource, UITableViewDelegat
             print("delete room")
             if self.isRoomAvail(room_id: self.rooms![indexPath.row].room_id)  {
                  self.deleteRoom(room_id: self.rooms![indexPath.row].room_id)
+                 self.navigationController?.popViewController(animated: true)
             } else {
                 print("Cannot be deleted if the room is not available ")
             }
