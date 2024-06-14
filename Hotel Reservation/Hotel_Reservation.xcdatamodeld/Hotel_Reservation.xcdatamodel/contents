@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Hotels" representedClassName="Hotels" syncable="YES" codeGenerationType="class">
+        <attribute name="hotel_name" optional="YES" attributeType="String"/>
+        <attribute name="hotel_numberOfRooms" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Reservation" representedClassName="Reservation" syncable="YES" codeGenerationType="class">
+        <attribute name="res_checkin" optional="YES" attributeType="String"/>
+        <attribute name="res_country" optional="YES" attributeType="String"/>
+        <attribute name="res_id" optional="YES" attributeType="String"/>
+        <attribute name="res_name" optional="YES" attributeType="String"/>
+        <attribute name="res_note" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Room" representedClassName="Room" syncable="YES" codeGenerationType="class">
+        <attribute name="isavailable" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="room_id" optional="YES" attributeType="String"/>
+        <attribute name="room_name" optional="YES" attributeType="String"/>
+        <attribute name="room_type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Stays" representedClassName="Stays" syncable="YES" codeGenerationType="class">
+        <attribute name="stay_country" optional="YES" attributeType="String"/>
+        <attribute name="stay_currency" optional="YES" attributeType="String"/>
+        <attribute name="stay_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="stay_fullName" optional="YES" attributeType="String"/>
+        <attribute name="stay_id" optional="YES" attributeType="String"/>
+        <attribute name="stay_note" optional="YES" attributeType="String"/>
+        <attribute name="stay_price" optional="YES" attributeType="String"/>
+        <attribute name="stay_roomId" optional="YES" attributeType="String"/>
+        <attribute name="stay_roomName" optional="YES" attributeType="String"/>
+    </entity>
+</model>
